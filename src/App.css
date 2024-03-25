@@ -1,0 +1,50 @@
+#root
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.background
+{
+  position:absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--base-color);
+}
+
+.foreground
+{
+  position: relative;
+  display: flex;
+  z-index: 2;
+  justify-content: space-around;
+  top: -4rem;
+
+  & div
+  {
+    padding: 1.25rem;
+    // Space between cards
+    margin: 4rem 4rem;
+    padding: 5rem 5rem;
+    background-color: var(--card-background-color);
+    color: var(--primary-text-color);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.top-banner
+{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 1.25rem 0;
+  margin-top: 4rem;
+  padding: 3rem 0;
+  background-color: #1a1717;
+  color: var(--secondary-text-color);
+}
